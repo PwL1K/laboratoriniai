@@ -1,0 +1,95 @@
+@media screen and (min-width: 360px) and (max-width: 1000px){ 
+    /* 768px */
+    /* ==========================Navbar Responsiveness========================== */
+    
+    #navbar {
+        position: fixed;
+    }
+    #navbar ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #navbar li {
+        margin: 10px;
+    }
+    /* ==========================Hero Responsiveness========================== */
+    #hero {
+        width: 100%;
+        align-items: center;
+    }
+    .hero-container{
+        text-align: center;
+    }
+    /* ==========================About me Responsiveness========================== */
+    .about-container{
+        display: grid;
+    }
+    .about-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-info .about-header1{
+        margin-top: 75px; /*Teksto nuleidimui zemyn*/
+    }
+    .workimg{
+        display: flex;
+        max-width: 100%;
+        min-width: 45%;
+        justify-self: center;
+    }
+    /* ==========================Resume Responsiveness========================== */
+    .resume-container{
+        display:grid;
+    }
+    .resume-container{
+        margin: 0 20px 0 20px;
+    }
+    /* ==========================Contacts Responsiveness========================== */
+    .contacts-container{
+        margin: 0;
+        display: grid;
+        grid-template-areas:
+        "social"
+        "email" 
+        "call" 
+        "form";
+    }
+    .form{
+        grid-template-areas: 
+        "form-name"
+        "form-email"
+        "form-subject"
+        "form-message"
+        "form-button";
+    }
+    .form-name{
+        margin-right: 25px;
+    }
+    .form-email{
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    #navbar {
+        padding: 0; /* Adjust padding as needed */
+    }
+    #navbar ul{
+        display: flex;
+        justify-content: center;
+    }
+    #navbar a {
+        margin: 0px;
+        font-size: 15px;
+    }
+    #hero .hero-container h1 {
+        font-size: 30px;
+    }
+    #hero .hero-container h2 {
+        font-size: 15px;
+    }
+    
+}
