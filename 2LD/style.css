@@ -329,7 +329,9 @@ ion-icon{
     grid-area: form-message;
     margin: 0px 25px;
     height: 110px;
+    word-wrap: break-word;
     padding-bottom: 80px;
+    text-align: top;
 }
 .form button{
     grid-area: form-button;
