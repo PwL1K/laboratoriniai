@@ -78,3 +78,35 @@ buttons.forEach(btn => {
         });
     });
 });
+function infoSaugojimas(){
+
+let vardas = document.getElementById("vardas").value;
+let pavarde = document.getElementById("pavarde").value;
+let data = document.getElementById("metai").value;
+
+let isvestiInfo = {
+    Vardas: vardas,
+    Pavarde: pavarde,
+    Metai: data
+};
+var output = "Vartotojo vardas: " + isvestiInfo.Vardas + "<br>";
+    output += "Vartotojo pavardė: " + isvestiInfo.Pavarde + "<br>";
+    output += "Laukiama data: " + isvestiInfo.Metai + "<br>";
+    let userDate = new Date(isvestiInfo.Metai);
+    let currentDate = new Date();
+  
+    let timeDifference = userDate - currentDate;
+    timeDifference = Math.round(timeDifference / (1000 * 60 * 60 * 24));
+    // Displaying the time difference in days
+    if(timeDifference > 0){
+        if (timeDifference <= 1000) {output += "<br>" + "<span style='font-size: 12px;'>Reikės laukti: " + timeDifference + " dienų</span><br>";}
+        else if(timeDifference > 1000 && timeDifference < 7000) {output += "<br>" + "<span style='font-size: 16px;'>Reikės laukti: " + timeDifference + " dienų</span><br>";}
+        else{output += "<br>" + "<span style='font-size: 20px;'>Reikės laukti: " + timeDifference + " dienų</span><br>";}
+    }
+    else{
+        alert("Prašome įvesti ateities laukiamą datą");
+        output += "<br>" + "Prašome įvesti ateities laukiamą datą" + "<br>";
+    }
+    console.log(isvestiInfo);
+    document.getElementById("rezultatas").innerHTML = "<h3>Įvesta informacija:</h3>" + output;
+}
