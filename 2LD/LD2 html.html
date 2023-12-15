@@ -119,13 +119,13 @@
                         <a href="#"><ion-icon name="logo-github"></ion-icon></a>
                         </div>
                     </section>
-                    <section class="form">
-                        <input class="form-name" placeholder="Your Name">
-                        <input class="form-email" placeholder="Your Email">
+                    <form class="form">
+                        <input type="text" class="form-name" placeholder="Your Name">
+                        <input type="email" class="form-email" placeholder="Your Email">
                         <input class="form-subject" placeholder="Subject">
                         <textarea class="form-message" placeholder="Message"></textarea>
-                        <button type="submit">Send Message</button>
-                    </section>
+                        <button class="form-button" type="submit">Send Message</button>
+                    </form>
                     <section class="email">
                         <ion-icon class="icon-main" name="mail-outline"></ion-icon>
                         <h4>Email Me</h4>
@@ -137,6 +137,19 @@
                         +370 611 11 111
                     </section>
                 </div>
+                <section class="forma">
+                  <h3>Įveskite duomenis:</h3>
+                  <form class="forma">
+                    <label for="name">Name:</label>
+                    <input type="text" id="vardas"><br>
+                    <label for="surname">Pavarde:</label>
+                    <input type="text" id="pavarde"><br>
+                    <label for="metai">Laukia: </label>
+                    <input type="date" id="metai"><br>
+                    <button type="button" onclick="infoSaugojimas()">Skaičiuoti</button>
+                  </form>
+                 <div id="rezultatas"></div>
+                </section>
             </section>
             <!-- <section id="media" class="section-padding">
                 <button onclick="Youtube()">Youtube video</button>
@@ -157,10 +170,10 @@
                       </audio>
                 </div>
             </section> -->
-            <div class="print-link">
+            <!-- <div class="print-link">
                 <a href="javascript:window.print()">Spausdinti</a>
-            </div>
-            <section id="math-section">
+            </div> -->
+            <!-- <section id="math-section">
               <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                 <msup>
                   <mi>a</mi>
@@ -230,7 +243,7 @@
                 <path id="Shape 1" class="s0" d="m168.2 57.9l-9.6-2.9 14.7-49 9.6 2.9z"/>
                 <path id="Shape 2" class="s0" d="m168.7 64.7l-3.9-9.2 52-22.3 3.9 9.2z"/>
               </svg>
-            </section>
+            </section> -->
         </main>
         <footer>
             <div class="footer-text">
@@ -248,6 +261,7 @@
         </footer>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+       
     </body>
 </html>
 
