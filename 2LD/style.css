@@ -332,6 +332,7 @@ ion-icon{
     word-wrap: break-word;
     padding-bottom: 80px;
     text-align: top;
+    resize: vertical;
 }
 .form button{
     grid-area: form-button;
@@ -404,3 +405,6 @@ img {
     text-decoration: none;  
     padding: 5px;
 }
+/* .forma{
+    text-align: center;
+} */
